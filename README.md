@@ -10,9 +10,7 @@
     - Home: module-name
       - components: Chứa các component chỉ sử dụng trong module, có thể chứa business logic của Project: side effect, redux
       - pages: Chứa các component là 1 page cụ thể
-      - actions: Chứa redux actions
-      - constatns: Chứa redux action types/ Chứa những biến constants sử dụng trong module
-      - reducers: Chứa redux reducers
+      - slices: Chứa redux slices (redux-toolkit)
 
   - hooks: Chứa các custom hook mình tự viết để sử dụng trong project
 
@@ -26,13 +24,15 @@
 
   - styles: Chứa các file css/scss, nếu dùng css-in-js thì k cần
 
+  - App.js:
+    - Cấu hình router: Sử dụng kĩ thuật lazyload
+    - Global component: ErrorBoudary,...
   - store.js: Setup redux store
-  - reducer.js: Setup root reducer
   - globalStyles.js: Setup global styles sử dụng css-in-js
 
 
 ### Library
-- Store: redux, react-redux, redux-thunk
+- Store: @reduxjs/toolkit, react-redux
 - Router: react-router-dom
 - UI component: react-bootstrap/material-ui/ant-design/mantine,...
 - Style:

@@ -1,8 +1,12 @@
 import React from "react";
-import { Container } from "./styles";
+import MovieShowing from "../components/MovieShowing";
 
 function HomePage() {
-  return <Container className="container">HomePage</Container>;
+  return (
+    <div>
+      <MovieShowing />
+    </div>
+  );
 }
 
 export default HomePage;
